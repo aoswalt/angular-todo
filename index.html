@@ -41,6 +41,10 @@
       </div>
 
       <div>
+        <h2>You have selected {{selectedTodo.name}}</h2>
+      </div>
+
+      <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
         <ul ng-repeat="eachItem in tasks | filter: potato">
           <li>{{eachItem.name}} {{eachItem.type}} <button ng-click="removeTodo(eachItem)">Delete</button></li>
