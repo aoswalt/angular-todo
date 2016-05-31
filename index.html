@@ -16,18 +16,24 @@
       <input type="text" ng-model="potato" id="potato">
       <span>{{potato}}</span>
 
-      <div></div>
+<!--       <div></div>
       <label for="filter2">Filter2</label>
       <input type="text" ng-model="filter2" id="filter2">
 
       <div></div>
       <input type="checkbox" ng-model="variableName">
       <span>{{variableName}}</span>
+ -->
+
+      <div>
+        <input type="text" ng-model="newTodo">
+        <button class="btn-default" ng-click="addTodo()">New Todo</button>
+      </div>
 
       <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
-        <ul ng-repeat="eachItem in tasks | filter: potato | filter: filter2">
-          <li>{{eachItem.name}}  {{eachItem.type}}</li>
+        <ul ng-repeat="eachItem in tasks | filter: potato">
+          <li>{{eachItem.name}}</li>
         </ul>
       </div>
     </div>
