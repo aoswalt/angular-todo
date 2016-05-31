@@ -2,6 +2,7 @@
 app.controller("TodoCtrl", function($scope) {
   $scope.title = "Angular Todo!";
   $scope.potato = "";
+  $scope.filter2 = "";
   $scope.variableName = "";
 
   $scope.tasks = [

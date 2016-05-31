@@ -12,15 +12,21 @@
     <h1>{{title}}</h1>
 
     <div>
-      <input type="text" ng-model="potato">
-      <div>{{potato}}</div>
+      <label for="potato">Potato</label>
+      <input type="text" ng-model="potato" id="potato">
+      <span>{{potato}}</span>
 
+      <div></div>
+      <label for="filter2">Filter2</label>
+      <input type="text" ng-model="filter2" id="filter2">
+
+      <div></div>
       <input type="checkbox" ng-model="variableName">
-      <div>{{variableName}}</div>
+      <span>{{variableName}}</span>
 
       <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
-        <ul ng-repeat="eachItem in tasks">
+        <ul ng-repeat="eachItem in tasks | filter: potato | filter: filter2">
           <li>{{eachItem.name}}  {{eachItem.type}}</li>
         </ul>
       </div>
