@@ -31,6 +31,14 @@
       </form>
 
       <div>
+        <label for="type">Task Type</label>
+        <select id="type"
+          ng-model="selectedTodo"
+          ng-options="item.name group by item.type for item in tasks">
+        </select>
+      </div>
+
+      <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
         <ul ng-repeat="eachItem in tasks | filter: potato">
           <li>{{eachItem.name}} <button ng-click="removeTodo(eachItem)">Delete</button></li>

@@ -6,6 +6,7 @@ app.controller("TodoCtrl", function($scope) {
   $scope.variableName = "";
 
   $scope.newTodo = "";
+  $scope.selectedTodo = "";
 
   $scope.tasks = [
     { name: "Make the bed", type: "home" },
