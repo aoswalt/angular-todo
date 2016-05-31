@@ -1,0 +1,17 @@
+{
+  "name": "angular-todo",
+  "homepage": "https://github.com/aoswalt/angular-todo",
+  "authors": [
+    "Adam Oswalt <adam.oswalt@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
