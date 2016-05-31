@@ -20,4 +20,12 @@ app.controller("TodoCtrl", function($scope) {
     $scope.newTodo = "";
   };
 
+  $scope.removeTodo = function(task) {
+    //NOTE(adam): task is the whole object
+    const taskIndex = $scope.tasks.indexOf(task);
+    if(taskIndex > -1) {
+      $scope.tasks.splice(taskIndex, 1);
+    }
+  };
+
 });

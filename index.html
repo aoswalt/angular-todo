@@ -33,7 +33,7 @@
       <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
         <ul ng-repeat="eachItem in tasks | filter: potato">
-          <li>{{eachItem.name}}</li>
+          <li>{{eachItem.name}} <button ng-click="removeTodo(eachItem)">Delete</button></li>
         </ul>
       </div>
     </div>
