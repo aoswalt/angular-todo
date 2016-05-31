@@ -25,10 +25,10 @@
       <span>{{variableName}}</span>
  -->
 
-      <div>
+      <form ng-submit="addTodo()">
         <input type="text" ng-model="newTodo">
-        <button class="btn-default" ng-click="addTodo()">New Todo</button>
-      </div>
+        <button type="submit" class="btn-default">New Todo</button>
+      </form>
 
       <div>
         <!-- Repeat EVERYTHING within ng-repeat -->
